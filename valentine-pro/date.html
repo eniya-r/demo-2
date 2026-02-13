@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date Night</title>
+<link rel="stylesheet" href="../css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<div class="card">
+    <h1>Be My Valentine? 💕</h1>
+    <p>Up for a Temple date? Shivan Temple?? 🎬</p>
+    <p>Let's go ASAP??</p>
+
+    <button onclick="celebrate()">Yes, I'd love to! ❤️</button>
+    <button onclick="location.href='menu.html'">Back</button>
+</div>
+
+<div class="music-btn" onclick="toggleMusic()">🎵</div>
+
+<script>
+function celebrate(){
+    confetti({
+        particleCount:150,
+        spread:100,
+        origin:{ y:0.6 }
+    });
+    alert("YAYYYYY ❤️❤️❤️");
+}
+</script>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memories</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="card gallery">
+    <h1>Our Best Moments 💕</h1>
+
+    <img src="../images/pic1.jpg" onclick="showImage(this.src)">
+    <img src="../images/pic2.jpg" onclick="showImage(this.src)">
+    <img src="../images/pic3.jpg" onclick="showImage(this.src)">
+    <img src="../images/pic4.jpg" onclick="showImage(this.src)">
+
+    <button onclick="location.href='menu.html'">Back to Menu</button>
+</div>
+
+<div id="popup" class="popup" onclick="closePopup()">
+    <img id="popupImg">
+</div>
+
+<div class="music-btn" onclick="toggleMusic()">🎵</div>
+
+<script src="../js/script.js"></script>
+</body>
+</html>
